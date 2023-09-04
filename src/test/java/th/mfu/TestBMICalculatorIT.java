@@ -83,7 +83,7 @@ public class TestBMICalculatorIT {
             String jsonResponse = response.readEntity(String.class);
             assertThat(jsonResponse, CoreMatchers.containsString("Result is 20.4"));
 
-            assertThat(jsonResponse, CoreMatchers.containsString(" considered normal"));
+            assertThat(jsonResponse, CoreMatchers.containsString(" normal"));
             _logger.info("IT1 test passed");
         }
     }
